@@ -1,6 +1,14 @@
-import { defineDb } from 'astro:db';
+import { defineDb } from "astro:db";
+import {
+  DailyChallenges,
+  DailyChallengeAttempts,
+  UserChallengeStats,
+} from "./tables";
 
-// https://astro.build/db/config
 export default defineDb({
-  tables: {}
+  tables: {
+    DailyChallenges,
+    DailyChallengeAttempts,
+    UserChallengeStats,
+  },
 });
