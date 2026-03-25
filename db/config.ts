@@ -1,14 +1,8 @@
 import { defineDb } from "astro:db";
-import {
-  DailyChallenges,
-  DailyChallengeAttempts,
-  UserChallengeStats,
-} from "./tables";
+import { DailyWords } from "./tables";
 
 export default defineDb({
   tables: {
-    DailyChallenges,
-    DailyChallengeAttempts,
-    UserChallengeStats,
+    DailyWords,
   },
 });

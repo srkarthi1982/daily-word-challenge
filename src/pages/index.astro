@@ -2,91 +2,43 @@
 import AppShell from "../layouts/AppShell.astro";
 import { AvContainer, AvButton } from "@ansiversa/components";
 
-const title = "Daily Word Challenge – Ansiversa";
-const description = "Learn one new word every day.";
+const title = "Daily Word Challenge | Ansiversa";
+const description = "A premium daily word learning tracker for focused vocabulary growth.";
 ---
 
 <AppShell title={title} description={description}>
-  <!-- Hero -->
-  <section class="av-hero">
-    <AvContainer size="narrow" className="av-hero__content--narrow">
-      <div class="av-hero__content">
-        <div class="av-kicker">
-          <span>Learning · Ansiversa Mini App</span>
+  <section class="border-b border-white/10 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 py-24">
+    <AvContainer size="narrow">
+      <div class="space-y-6 text-center">
+        <p class="text-xs uppercase tracking-[0.24em] text-slate-400">Ansiversa Mini App</p>
+        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">Build your vocabulary habit,<br />one word each day.</h1>
+        <p class="mx-auto max-w-2xl text-base text-slate-300 md:text-lg">
+          Daily Word Challenge keeps your personal word learning clean and consistent.
+          Capture terms, assign challenge dates, and track completion without clutter.
+        </p>
+        <div class="flex items-center justify-center gap-3">
+          <AvButton href="/app">Open Workspace</AvButton>
+          <AvButton href="#features" variant="secondary">See Features</AvButton>
         </div>
-        <h1 class="av-gradient-text">Daily Word Challenge</h1>
-        <p>
-          Learn one new word every day.
-        </p>
-      </div>
-      <div class="av-cta-row">
-        <AvButton href="https://daily-word-challenge.ansiversa.com">Launch Daily</AvButton>
       </div>
     </AvContainer>
   </section>
 
-  <!-- Problem -->
-  <section class="av-section">
+  <section id="features" class="py-16">
     <AvContainer size="narrow">
-      <div class="av-section-header">
-        <h2 class="av-section-title">The problem it solves</h2>
-        <p class="av-section-lead">
-          Learning tools are scattered across tabs, apps, and messy notes.
-        </p>
-      </div>
-      <div class="av-section-body space-y-3 text-slate-300">
-        <p>Daily Word Challenge focuses on one part of your learning flow and keeps it clear.</p>
-      </div>
-    </AvContainer>
-  </section>
-
-  <!-- Why this mini app -->
-  <section class="av-section">
-    <AvContainer size="narrow">
-      <div class="av-section-header">
-        <h2 class="av-section-title">Why Daily Word Challenge feels different</h2>
-        <p class="av-section-lead">
-          A focused mini app inside the larger Ansiversa ecosystem.
-        </p>
-      </div>
-      <div class="av-section-body">
-        <ul class="space-y-2 text-slate-300 list-disc list-inside">
-          <li>Designed specifically for learners, students, and educators.</li>
-          <li>Removes distractions so you can focus on actual understanding.</li>
-          <li>Built on the fast, unified Ansiversa ecosystem.</li>
-        </ul>
-      </div>
-    </AvContainer>
-  </section>
-
-  <!-- How it works -->
-  <section class="av-section">
-    <AvContainer size="narrow">
-      <div class="av-section-header">
-        <h2 class="av-section-title">How it works</h2>
-        <p class="av-section-lead">
-          Simple, clear steps so people can start in under a minute.
-        </p>
-      </div>
-      <ol class="av-section-body space-y-2 text-slate-300 list-decimal list-inside">
-        <li>Open Daily Word Challenge in your browser.</li>
-        <li>Add the topic, content, or material you want to work with.</li>
-        <li>Use the focused tools to learn, revise, or practice within minutes.</li>
-      </ol>
-    </AvContainer>
-  </section>
-
-  <!-- Final CTA -->
-  <section class="av-section">
-    <AvContainer size="narrow">
-      <div class="av-section-header">
-        <h2 class="av-section-title">Ready to try Daily Word Challenge?</h2>
-        <p class="av-section-lead">
-          Open the app, follow the simple flow, and let it handle the heavy lifting.
-        </p>
-      </div>
-      <div class="av-cta-row">
-        <AvButton href="https://daily-word-challenge.ansiversa.com">Start with Daily</AvButton>
+      <div class="grid gap-4 md:grid-cols-3">
+        <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+          <h2 class="text-lg font-semibold text-white">Personal Word Vault</h2>
+          <p class="mt-2 text-sm text-slate-300">Store term, meaning, examples, and categories in one calm workspace.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+          <h2 class="text-lg font-semibold text-white">Challenge Routine</h2>
+          <p class="mt-2 text-sm text-slate-300">Assign challenge dates, mark completed, and keep your streak of consistency alive.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+          <h2 class="text-lg font-semibold text-white">Focused Progress</h2>
+          <p class="mt-2 text-sm text-slate-300">Favorites, archive history, and high-signal dashboard summaries in the Ansiversa ecosystem.</p>
+        </article>
       </div>
     </AvContainer>
   </section>
